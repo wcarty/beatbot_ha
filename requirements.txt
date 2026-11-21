@@ -1,0 +1,2 @@
+# Synced with custom_components/beatbot/manifest.json for Dependabot tracking
+beatbot-cloud==0.4.4
