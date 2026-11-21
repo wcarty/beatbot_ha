@@ -1,0 +1,14 @@
+{
+  "domain": "beatbot",
+  "name": "Beatbot",
+  "codeowners": ["@wcarty"],
+  "config_flow": true,
+  "dependencies": ["application_credentials"],
+  "documentation": "https://github.com/wcarty/beatbot_ha",
+  "integration_type": "hub",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/wcarty/beatbot_ha/issues",
+  "loggers": ["beatbot_cloud"],
+  "requirements": ["beatbot-cloud==0.4.4"],
+  "version": "0.1.0"
+}

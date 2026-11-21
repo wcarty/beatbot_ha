@@ -1,0 +1,139 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Account is already configured.",
+      "already_in_progress": "Configuration flow is already in progress.",
+      "authorize_url_timeout": "Timed out generating authorize URL.",
+      "cannot_connect": "Cannot connect to Beatbot servers.",
+      "missing_configuration": "The component is not configured. Please follow the documentation.",
+      "missing_credentials": "The integration requires application credentials.",
+      "no_url_available": "No authorization URL available. Make sure Home Assistant is reachable, or enable My Home Assistant.",
+      "oauth_error": "The OAuth server returned an invalid token.",
+      "oauth_failed": "Failed to fetch the OAuth token.",
+      "oauth_timeout": "Timed out while fetching the OAuth token.",
+      "oauth_unauthorized": "Authorization refused because authentication failed.",
+      "reauth_successful": "Re-authentication was successful.",
+      "unknown_region": "The Beatbot account did not report a supported region (CN, NA, EU).",
+      "user_rejected_authorize": "You rejected the authorization: {error}.",
+      "wrong_account": "The authenticated Beatbot account does not match the existing entry."
+    },
+    "create_entry": {
+      "default": "Successfully authenticated with Beatbot."
+    },
+    "error": {
+      "connection_error": "Cannot connect to Beatbot servers.",
+      "invalid_auth": "Authentication failed."
+    },
+    "step": {
+      "auth": {
+        "description": "Follow the link to sign in to your Beatbot account and authorize Home Assistant to access your pool cleaner.",
+        "title": "Authorize Beatbot account"
+      },
+      "pick_implementation": {
+        "data": {
+          "implementation": "Application Credentials"
+        },
+        "data_description": {
+          "implementation": "The credentials you want to use to authenticate."
+        },
+        "title": "Pick authentication method"
+      },
+      "reauth_confirm": {
+        "description": "Your Beatbot session has expired. Re-authenticate with your Beatbot account to continue.",
+        "title": "Re-authenticate Beatbot"
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "online": {
+        "name": "Online"
+      },
+      "problem": {
+        "name": "Problem"
+      }
+    },
+    "select": {
+      "work_mode": {
+        "name": "Cleaning mode"
+      }
+    },
+    "switch": {
+      "child_lock": {
+        "name": "Child lock"
+      },
+      "voice_disturb": {
+        "name": "Voice do not disturb"
+      }
+    },
+    "sensor": {
+      "error": {
+        "name": "Error",
+        "state": {
+          "charge_high_temperature": "Charging high temperature",
+          "charge_low_temperature": "Charging low temperature",
+          "dust_box_full": "Filter basket full",
+          "dust_box_loss": "Filter basket missing",
+          "enter_shawdow_water_error": "Shallow water error",
+          "env_high_temperature": "High ambient temperature",
+          "env_low_temperature": "Low ambient temperature",
+          "err_dust_not_install": "Filter basket not installed",
+          "motor_airpump_left": "Left air pump motor error",
+          "motor_airpump_right": "Right air pump motor error",
+          "motor_brush": "Brush motor error",
+          "motor_error": "Motor error",
+          "motor_pump": "Pump motor error",
+          "motor_reagent": "Reagent motor error",
+          "motor_rod": "Rod motor error",
+          "motor_thruster": "Thruster motor error",
+          "motor_thruster_left": "Left thruster motor error",
+          "motor_thruster_right": "Right thruster motor error",
+          "motor_wheel_left": "Left wheel motor error",
+          "motor_wheel_right": "Right wheel motor error",
+          "none": "None",
+          "platform_clean_err": "Platform cleaning error",
+          "power_cutting": "Power cut",
+          "power_low": "Low battery",
+          "trapped": "Trapped"
+        }
+      },
+      "work_status": {
+        "name": "Status",
+        "state": {
+          "auto_dock": "Auto docking",
+          "charge_done": "Charging complete",
+          "charging": "Charging",
+          "chase_light": "Chasing light",
+          "check_down": "Self-check complete",
+          "clean_done": "Cleaning complete",
+          "clean_wait": "Waiting to clean",
+          "cleaning": "Cleaning",
+          "diving": "Diving",
+          "dock": "Docked",
+          "dock_done": "Docking complete",
+          "emerge": "Emerging",
+          "finish_connect": "Connected",
+          "goto_charge": "Returning to charge",
+          "paused": "Paused",
+          "remote_control": "Remote control",
+          "replenish_energy": "Replenishing energy",
+          "return_trip": "Returning",
+          "self_checking": "Self-checking",
+          "self_cleaning": "Self-cleaning",
+          "sleep": "Sleeping",
+          "standby": "Standby",
+          "uncheck": "Unchecked",
+          "wifi_connect": "Connecting to Wi-Fi"
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "auth_error": {
+      "message": "Authentication with Beatbot failed."
+    },
+    "update_error": {
+      "message": "Failed to update Beatbot data: {error}"
+    }
+  }
+}
